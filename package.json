@@ -1,0 +1,15 @@
+{
+  "name": "sailfish-cli",
+  "version": "1.0.0",
+  "description": "旗鱼前端通用脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "fe"
+  ],
+  "author": "yangbo",
+  "license": "ISC"
+}
