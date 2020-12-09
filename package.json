@@ -6,10 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "sfc": "./bin/index.js"
+  },
   "keywords": [
     "cli",
     "fe"
   ],
   "author": "yangbo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^6.2.0",
+    "inquirer": "^7.3.3"
+  }
 }
