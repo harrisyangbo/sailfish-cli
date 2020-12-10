@@ -21,7 +21,9 @@ program
  .description('查看模板列表')
  .alias('-l')
  .action(() => {
-	 require('../src/temp')()
+	 let TemplateList = require('../src/temp')
+	 let templageList = new TemplateList()
+	 templageList.show()
  })
 
 program.parse(process.argv)
