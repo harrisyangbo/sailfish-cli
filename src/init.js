@@ -1,13 +1,17 @@
 const { choiceTemp } = require('./choice')
 const { userInput } = require('./user_input')
+const requiredVersion = require('../package.json').engines.node
+const checkoutVersion = require('../utils/checkout_version')
 const cwd = process.cwd()
 const fs = require('fs')
+// 检查版本
+checkoutVersion(requiredVersion, 'sailfish-cli')
+
 let TemplateList = require('../src/temp')
 var ctx = {
 	__cwd: cwd
 }
 module.exports = function() {
-	// 用户输入
 	userInput(ctx.__cwd)
 	.then((res) => {
 		const { proName, description } = res

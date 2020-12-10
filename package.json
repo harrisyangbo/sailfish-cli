@@ -13,12 +13,16 @@
     "cli",
     "fe"
   ],
+  "engines": {
+    "node": ">=8.9"
+  },
   "author": "yangbo",
   "license": "ISC",
   "dependencies": {
     "commander": "^6.2.0",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.3.3",
-    "loading-cli": "^1.1.0"
+    "loading-cli": "^1.1.0",
+    "semver": "^7.3.4"
   }
 }
