@@ -13,6 +13,7 @@ exports.choiceTemp = function() {
 			"react-app-template",
 			"angular-app-template",
 			new inquirer.Separator('----开发npm包模板----'),
+			"vue-module",
 			"npm-js",
 			"npm-ts",
 			new inquirer.Separator('----H5模板----'),

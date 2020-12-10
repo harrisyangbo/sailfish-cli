@@ -12,6 +12,10 @@ module.exports = {
 			gitUri: '',
 			desc: 'Angular单页面应用模板'
 		},
+		'vue-module': {
+			gitUri: 'direct:https://github.com/harrisyangbo/module-vue/archive/master.zip',
+			desc: 'vue模块(组件)模板'
+		},
 		'npm-js': {
 			gitUri: '',
 			desc: 'npm包开发模板(js)'

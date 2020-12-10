@@ -1,10 +1,8 @@
 const inquirer = require('inquirer')
-const { type } = require('os')
 const path = require('path')
-const cwd = process.cwd()
 let form = inquirer.createPromptModule()
 
-exports.userInput = function() {
+exports.userInput = function(cwd) {
 	const defaultPro = path.basename(cwd)
 	return form([{
 		message: '项目名称：',
