@@ -23,6 +23,7 @@
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.3.3",
     "loading-cli": "^1.1.0",
+    "rimraf": "^3.0.2",
     "semver": "^7.3.4"
   }
 }

@@ -1,6 +1,8 @@
-const { templates } = require('../config/templates')
+const { templates, injectFilesName } = require('../config/templates')
 const { colors } = require('../utils/colors')
 const download = require('download-git-repo')
+const path = require('path')
+const { readFile, writeFile } = require('../utils/file_operate')
 let loadings = require('loading-cli')
 let reqLoad = loadings({
     "color":"yellow",
@@ -31,6 +33,22 @@ class TemplateList {
 						resolve()
 					}
 				})
+			}
+		})
+	}
+	injectContent(cwd, proName) {
+		// 替换模板中的变量
+		return new Promise((resolve, reject) => {
+			try {
+				injectFilesName.forEach((item) => {
+					const filePath = path.normalize(path.resolve(cwd, item))
+					let res = readFile(filePath)
+					let newContent = res.replace(/\$\{X+\}/g, proName)
+					writeFile(filePath, newContent)
+				})
+				resolve()
+			} catch(e) {
+				reject(e)
 			}
 		})
 	}
