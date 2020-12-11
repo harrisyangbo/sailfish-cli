@@ -8,6 +8,10 @@ module.exports = {
 			gitUri: '',
 			desc: 'React单页面应用模板'
 		},
+		'sailfish-admin': {
+			gitUri: '',
+			desc: '旗鱼系列-中后台管理系统模板'
+		},
 		'angular-app-template': {
 			gitUri: '',
 			desc: 'Angular单页面应用模板'

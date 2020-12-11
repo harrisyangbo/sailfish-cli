@@ -12,6 +12,7 @@ exports.choiceTemp = function() {
 			"vue-app-template",
 			"react-app-template",
 			"angular-app-template",
+			"sailfish-admin",
 			new inquirer.Separator('----开发npm包模板----'),
 			"vue-module",
 			"npm-js",
