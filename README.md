@@ -20,4 +20,7 @@ sfc init
 #### 目前提供如下模板
 
 - vue-app-template：Vue单页面应用模板
-- vue-module：vue模块(组件)模板
+- vue-app-template-ts：Vue单页面应用模板typescript版
+- vue-module：vue模块(组件)模板，用于发布vue组件到npm
+- npm-js：JS模块模板，用于发布JS模块到npm
+- npm-ts：typescript模块模板，用于发布ts模块到npm

@@ -43,8 +43,10 @@ class TemplateList {
 				injectFilesName.forEach((item) => {
 					const filePath = path.normalize(path.resolve(cwd, item))
 					let res = readFile(filePath)
-					let newContent = res.replace(/\$\{X+\}/g, proName)
-					writeFile(filePath, newContent)
+					if (res) {
+						let newContent = res.replace(/\$\{X+\}/g, proName)
+						writeFile(filePath, newContent)
+					}
 				})
 				resolve()
 			} catch(e) {
